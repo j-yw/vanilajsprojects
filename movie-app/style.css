@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+header {
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search {
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+  color: #a0a0a0;
+}
+
+.search:focus {
+  outline: none;
+  background-color: rgb(248, 248, 248);
+}
+
+.movie {
+  border-radius: 3px;
+  box-shadow: 0px 21px 16px -9px rgba(0, 0, 0, 0.13);
+  width: 300px;
+  overflow: hidden;
+  margin: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  padding: 0.5rem 1rem 1rem 1rem;
+  color: #000;
+  letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+
+.movie-info span {
+  padding: 0.25rem;
+  color: pink;
+  font-weight: bold;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.movie-info span.green {
+  color: rgb(29, 179, 29);
+}
+.movie-info span.orange {
+  color: rgb(238, 168, 37);
+}
+.movie-info span.red {
+  color: rgb(224, 26, 26);
+}
+
+.overview {
+  background-color: white;
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(101%);
+  transition: 0.3s ease-in;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+.overview h4 {
+  margin-top: 0;
+}

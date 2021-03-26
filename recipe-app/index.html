@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Recipe App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <input type="text" id="search-term" />
+        <button id="search"><i class="fas fa-search"></i></button>
+      </header>
+      <div class="fav-wrapper">
+        <h1>Favorite Meals</h1>
+        <ul class="fav-meals"></ul>
+      </div>
+      <div class="meals"></div>
+    </div>
+    <div class="popup-wrapper hidden">
+      <div class="popup">
+        <button class="close-popup"><i class="far fa-window-close"></i></button>
+        <div class="meal-info"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e9a1b18b97.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
