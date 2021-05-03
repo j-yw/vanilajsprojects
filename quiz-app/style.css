@@ -58,7 +58,7 @@ ul li label {
 }
 
 button {
-  background-color: #00b894;
+  background-color: royalblue;
   display: block;
   width: 100%;
   padding: 1rem;
@@ -70,7 +70,7 @@ button {
 }
 
 button:hover {
-  background-color: #099175;
+  background-color: rgba(65, 105, 225, 0.801);
 }
 
 button:focus {
